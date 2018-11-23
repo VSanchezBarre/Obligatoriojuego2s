@@ -5,15 +5,22 @@
  */
 package paqueteInterfaz;
 
+import PackageJuego.Sistema;
+
 /**
  *
  * @author V Sanchez Barre
  */
 public class Historial extends javax.swing.JFrame {
+     
+    Sistema sistema;
 
-    /**
-     * Creates new form Historial
-     */
+    public Historial(Sistema sistema) {
+        this.sistema = sistema;
+    }
+    
+
+    
     public Historial() {
         initComponents();
     }

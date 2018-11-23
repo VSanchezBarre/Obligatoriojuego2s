@@ -275,6 +275,11 @@ public static int elegirTerminacion() {
             listaJugadores.add(jugador);
         }
     }
+    public void agregarJugador(Jugador unJugador) {
+        if (!unJugador.getAlias().equals("Empate")) {
+            listaJugadores.add(unJugador);
+        }
+    }
 
     public boolean existeAlias(String alias) {
         Jugador auxPlayer = new Jugador();

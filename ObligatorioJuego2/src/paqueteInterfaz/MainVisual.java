@@ -8,6 +8,7 @@ public class MainVisual {
         Sistema sistemaVisual = new Sistema();
         MenuPrincipal menu = new MenuPrincipal(sistemaVisual);
         menu.setVisible(true);
+        menu.setDefaultCloseOperation(0);
         menu.pack();
         menu.setLocationRelativeTo(null);
     }

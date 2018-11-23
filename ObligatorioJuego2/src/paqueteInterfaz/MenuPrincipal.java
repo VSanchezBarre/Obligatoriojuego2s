@@ -5,6 +5,7 @@ import paqueteInterfaz.*;
 import java.io.*;
 
 public class MenuPrincipal extends javax.swing.JFrame {
+
     private Sistema sistema;
 
     public MenuPrincipal(Sistema sistema) {
@@ -30,7 +31,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         titulo = new javax.swing.JTextPane();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        setBackground(new java.awt.Color(0, 255, 255));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         botonRegistrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -47,6 +50,12 @@ public class MenuPrincipal extends javax.swing.JFrame {
         botonHistorial.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botonHistorialActionPerformed(evt);
+            }
+        });
+
+        botonRanking.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonRankingActionPerformed(evt);
             }
         });
 
@@ -144,18 +153,29 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_botonRegistrarActionPerformed
 
     private void botonJugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonJugarActionPerformed
-         Jugar jugar = new Jugar(this.sistema);
+        Jugar jugar = new Jugar(this.sistema);
+        jugar.pack();
+        jugar.setLocationRelativeTo(null);
         jugar.setVisible(true);
     }//GEN-LAST:event_botonJugarActionPerformed
 
     private void botonHistorialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonHistorialActionPerformed
-        // TODO add your handling code here:
+        Historial historial = new Historial(this.sistema);
+        historial.pack();
+        historial.setLocationRelativeTo(null);
+        historial.setVisible(true);
     }//GEN-LAST:event_botonHistorialActionPerformed
 
     private void botonSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonSalirActionPerformed
         System.exit(0);
     }//GEN-LAST:event_botonSalirActionPerformed
 
+    private void botonRankingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonRankingActionPerformed
+        Ranking ranking = new Ranking(this.sistema);
+        ranking.pack();
+        ranking.setLocationRelativeTo(null);
+        ranking.setVisible(true);
+    }//GEN-LAST:event_botonRankingActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
