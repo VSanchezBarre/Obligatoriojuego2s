@@ -30,116 +30,152 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         titulo = new javax.swing.JTextPane();
+        jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
-        setBackground(new java.awt.Color(0, 255, 255));
+        setBackground(new java.awt.Color(102, 102, 255));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setForeground(new java.awt.Color(255, 255, 51));
 
+        botonRegistrar.setBackground(new java.awt.Color(255, 153, 102));
+        botonRegistrar.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         botonRegistrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botonRegistrarActionPerformed(evt);
             }
         });
 
+        botonJugar.setBackground(new java.awt.Color(51, 51, 255));
+        botonJugar.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         botonJugar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botonJugarActionPerformed(evt);
             }
         });
 
+        botonHistorial.setBackground(new java.awt.Color(255, 153, 102));
         botonHistorial.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botonHistorialActionPerformed(evt);
             }
         });
 
+        botonRanking.setBackground(new java.awt.Color(51, 51, 255));
+        botonRanking.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         botonRanking.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botonRankingActionPerformed(evt);
             }
         });
 
+        jLabel1.setBackground(new java.awt.Color(153, 153, 255));
+        jLabel1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel1.setText("Registrar Jugador");
 
+        jLabel2.setBackground(new java.awt.Color(153, 153, 255));
+        jLabel2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel2.setText("Jugar");
 
+        jLabel3.setBackground(new java.awt.Color(153, 153, 255));
+        jLabel3.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel3.setText("Historial");
 
+        jLabel4.setBackground(new java.awt.Color(153, 153, 255));
+        jLabel4.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel4.setText("Ranking");
 
+        botonSalir.setBackground(new java.awt.Color(255, 51, 51));
+        botonSalir.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         botonSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botonSalirActionPerformed(evt);
             }
         });
 
+        jLabel5.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 0, 0));
         jLabel5.setText("Salir");
 
+        titulo.setBackground(new java.awt.Color(255, 102, 102));
+        titulo.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        titulo.setForeground(new java.awt.Color(51, 102, 255));
         titulo.setText("             Menu Principal");
         jScrollPane2.setViewportView(titulo);
+
+        jPanel1.setLayout(new javax.swing.OverlayLayout(jPanel1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(281, 281, 281)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(28, 28, 28)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(33, 33, 33)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel1))))
-                        .addGap(33, 33, 33)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(botonRegistrar)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(botonRanking)
-                                .addComponent(botonSalir)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(botonHistorial)
-                                    .addComponent(botonJugar, javax.swing.GroupLayout.Alignment.TRAILING)))))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(botonHistorial, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(botonRanking, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(botonSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(29, 29, 29))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(264, 264, 264)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(280, Short.MAX_VALUE))
+                        .addComponent(botonJugar, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(486, Short.MAX_VALUE))))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(313, 313, 313)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(76, 76, 76)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel1))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel4)
+                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel3)))
+                        .addGap(49, 49, 49)
+                        .addComponent(botonRegistrar, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(49, 49, 49)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(botonRegistrar, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addGap(21, 21, 21)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(botonJugar, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addGap(36, 36, 36)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(botonHistorial, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addGap(28, 28, 28)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel4)
-                            .addComponent(botonRanking)))
-                    .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(31, 31, 31)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 57, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(botonRegistrar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(86, 86, 86))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(45, 45, 45)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botonJugar, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(72, 72, 72)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5)
-                    .addComponent(botonSalir))
-                .addContainerGap(55, Short.MAX_VALUE))
+                    .addComponent(botonHistorial, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3))
+                .addGap(50, 50, 50)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel4)
+                        .addGap(3, 3, 3)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(botonSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(botonRanking, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(22, 22, 22))
         );
 
         pack();
@@ -189,6 +225,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollBar jScrollBar1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextPane titulo;
