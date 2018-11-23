@@ -3,7 +3,9 @@ package paqueteInterfaz;
 import PackageJuego.Jugador;
 import PackageJuego.Sistema;
 import java.util.ArrayList;
+import javax.swing.JFrame;
 import javax.swing.JList;
+import javax.swing.JOptionPane;
 
 public class Registrar extends javax.swing.JFrame {
 
@@ -262,9 +264,13 @@ public class Registrar extends javax.swing.JFrame {
 
     private void botonEnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonEnterActionPerformed
 //joptionpane
-    if(!aliasRojo.getText().trim().equals("")){
+    String mensajeError = "El alias no puede quedar vacio";
+    JFrame frame = new JFrame("JOptionPane showMessageDialog example");
+    if(aliasRojo.getText().trim().equals("")){
+        JOptionPane.showMessageDialog(frame, mensajeError,"Error alias",JOptionPane.ERROR_MESSAGE);
         
     }
+    else{
         jugadorRojo.setNombre(nombreRojo.getText());
         jugadorRojo.setAlias(aliasRojo.getText());
         jugadorRojo.setEdad(Integer.parseInt(edadRojo.getText()));
@@ -273,6 +279,7 @@ public class Registrar extends javax.swing.JFrame {
         jugadorAzul.setEdad(Integer.parseInt(edadAzul.getText()));
         listaJugadores.add(jugadorRojo);
         listaJugadores.add(jugadorAzul);
+        }
     }//GEN-LAST:event_botonEnterActionPerformed
 
     private void nombreAzulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nombreAzulActionPerformed
@@ -289,7 +296,10 @@ public class Registrar extends javax.swing.JFrame {
             public void run() {
                 new Registrar().setVisible(true);
             }
-        });
+        }
+        
+        
+        );
     }
 
 
